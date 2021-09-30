@@ -1,5 +1,6 @@
 package domain;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -24,11 +25,27 @@ public class Car {
         this.wheels = wheels;
     }
 
-    public leftWheels() {
+    public List<Wheel> leftWheels() {
+        List<Wheel> leftWheels = new ArrayList<>();
 
+        for (Wheel wheel : wheels) {
+            if (wheel.getPosition().contains("Left")) {
+                leftWheels().add(wheel);
+            }
+        }
+
+        return leftWheels;
     }
 
-    public rightWheels() {
+    public List<Wheel> rightWheels() {
+        List<Wheel> rightWheels = new ArrayList<>();
 
+        for (Wheel wheel : wheels) {
+            if (wheel.getPosition().contains("Right")) {
+                rightWheels().add(wheel);
+            }
+        }
+
+        return rightWheels;
     }
 }
