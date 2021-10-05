@@ -1,4 +1,6 @@
-package domain;
+package Service;
+
+import domain.Car;
 
 import java.util.Map;
 import java.util.UUID;

@@ -1,7 +1,7 @@
 package infrastructure;
 
 import domain.Car;
-import domain.CarRepository;
+import Service.CarRepository;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,5 +19,4 @@ public class CarRepositoryImpl implements CarRepository {
     public Car getById(UUID id) {
         return carRepository.get(id);
     }
-
 }

@@ -1,9 +1,5 @@
 package Service;
 
-import domain.CarRepository;
-import domain.OilRepository;
-import domain.WheelRepository;
-
 public class GarageServices  {
     private CarRepository carRepo;
 
